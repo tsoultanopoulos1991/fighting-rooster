@@ -1,5 +1,6 @@
 import Navigation from '../components/Navigation'
-import Image from 'next/image'  // ← ADD THIS LINE
+import Image from 'next/image' 
+import ContactForm from '../components/ContactForm'  
 
 export default function Home() {
   return (
@@ -192,19 +193,110 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Quick CTA */}
-      <section className="py-16 bg-primary-600">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-6">
-            Έτοιμος να Ξεκινήσεις;
-          </h2>
-          <p className="text-xl text-white mb-8 opacity-90">
-            Έλα να γνωρίσεις τον δικό μας κόσμο. Fightingrooster Athens – Εκεί που οι μαχητές γεννιούνται.
-          </p>
-          <a href="#contact" 
-             className="inline-block bg-white hover:bg-gray-100 text-primary-600 font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg">
-            Κλείσε Δοκιμαστικό Μάθημα
-          </a>
+          {/* Contact Section */}
+      <section id="contact" className="py-20 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-4">
+              Επικοινωνία
+            </h2>
+            <div className="w-24 h-1 bg-primary-600 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Έτοιμος να ξεκινήσεις το ταξίδι σου στα μαχητικά αθλήματα; Επικοινώνησε μαζί μας!
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-display font-bold text-2xl text-white mb-6">
+                  Πληροφορίες Επικοινωνίας
+                </h3>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary-600 p-3 rounded-full flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white text-lg mb-2">Διεύθυνση</h4>
+                    <p className="text-gray-300 leading-relaxed">
+                      Αθήνα, Ελλάδα<br />
+                      <span className="text-sm">(Συγκεκριμένη διεύθυνση θα προστεθεί)</span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary-600 p-3 rounded-full flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white text-lg mb-2">Τηλέφωνο</h4>
+                    <p className="text-gray-300">+30 XXX XXX XXXX</p>
+                    <p className="text-sm text-gray-400">Κλήσεις & WhatsApp</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary-600 p-3 rounded-full flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white text-lg mb-2">Email</h4>
+                    <p className="text-gray-300">info@fightingrooster-athens.com</p>
+                    <p className="text-sm text-gray-400">Απαντάμε εντός 24 ωρών</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-primary-600 p-3 rounded-full flex-shrink-0">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-white text-lg mb-2">Ώρες Λειτουργίας</h4>
+                    <div className="text-gray-300 space-y-1">
+                      <p>Δευτέρα - Παρασκευή: 17:00 - 22:00</p>
+                      <p>Σάββατο: 10:00 - 14:00</p>
+                      <p>Κυριακή: Κλειστά</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Call to Action */}
+              <div className="bg-primary-600 p-6 rounded-xl">
+                <h4 className="font-display font-bold text-white text-xl mb-3">
+                  Δοκιμαστικό Μάθημα ΔΩΡΕΑΝ!
+                </h4>
+                <p className="text-primary-100 mb-4">
+                  Έλα να δοκιμάσεις το πρώτο σου μάθημα χωρίς χρέωση και να γνωρίσεις τον χώρο μας.
+                </p>
+                <a 
+                  href="tel:+30XXXXXXXXX" 
+                  className="inline-block bg-white text-primary-600 font-semibold py-2 px-6 rounded-lg hover:bg-gray-100 transition-colors"
+                >
+                  Κάλεσε Τώρα
+                </a>
+              </div>
+            </div>
+            
+            {/* Contact Form */}
+            <div>
+              <ContactForm />
+            </div>
+          </div>
         </div>
       </section>
 
