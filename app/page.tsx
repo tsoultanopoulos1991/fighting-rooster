@@ -74,6 +74,290 @@ export default function Home() {
         </div>
       </section>
 
+{/* Features & Services Section */}
+      <section className="py-20 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-4">
+              Εξοπλισμός & Υπηρεσίες
+            </h2>
+            <div className="w-24 h-1 bg-primary-600 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Ο χώρος είναι εξοπλισμένος με όλα τα απαραίτητα για υψηλού επιπέδου προπονήσεις
+            </p>
+          </div>
+          
+          {/* Main Features Grid */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="text-center p-8 bg-gray-800 rounded-2xl hover:bg-gray-750 transition-colors">
+              <div className="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 p-4">
+                <Image
+                  src="/images/icons/equipment-icon.png"
+                  alt="Professional Equipment"
+                  width={40}
+                  height={40}
+                  className="brightness-0 invert"
+                />
+              </div>
+              <h3 className="font-display font-bold text-xl text-white mb-4">
+                Επαγγελματικός Εξοπλισμός
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Ring και σάκους επαγγελματικών προδιαγραφών για υψηλού επιπέδου προπονήσεις και sparring.
+              </p>
+            </div>
+            
+            <div className="text-center p-8 bg-gray-800 rounded-2xl hover:bg-gray-750 transition-colors">
+              <div className="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 p-4">
+                <Image
+                  src="/images/icons/program-icon.png"
+                  alt="Complete Program"
+                  width={40}
+                  height={40}
+                  className="brightness-0 invert"
+                />
+              </div>
+              <h3 className="font-display font-bold text-xl text-white mb-4">
+                Πλήρες Πρόγραμμα
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Τεχνική κατάρτιση, φυσική κατάσταση και sparring για ολοκληρωμένη εκπαίδευση σε όλα τα επίπεδα.
+              </p>
+            </div>
+            
+            <div className="text-center p-8 bg-gray-800 rounded-2xl hover:bg-gray-750 transition-colors">
+              <div className="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 p-4">
+                <Image
+                  src="/images/icons/guidance-icon.png"
+                  alt="Specialized Guidance"
+                  width={40}
+                  height={40}
+                  className="brightness-0 invert"
+                />
+              </div>
+              <h3 className="font-display font-bold text-xl text-white mb-4">
+                Εξειδικευμένη Καθοδήγηση
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Προσωπική προσέγγιση από έμπειρους προπονητές για κάθε αθλητή ανεξαρτήτως επιπέδου.
+              </p>
+            </div>
+          </div>
+          
+          {/* Sports Programs */}
+          <div className="mb-16">
+            <h3 className="font-display font-bold text-2xl text-white text-center mb-12">
+              Αθλήματα & Προγράμματα
+            </h3>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-primary-600 p-6 rounded-xl text-white">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
+                    <Image
+                      src="/images/icons/muay-thai-icon.png"
+                      alt="Muay Thai"
+                      width={32}
+                      height={32}
+                      className="brightness-0 invert"
+                    />
+                  </div>
+                  <h4 className="font-display font-bold text-lg">Muay Thai</h4>
+                </div>
+                <p className="text-primary-100 mb-4">
+                  Η τέχνη των οκτώ άκρων. Αρχάριοι και προχωρημένοι.
+                </p>
+                <ul className="text-sm text-primary-100 space-y-1">
+                  <li>• Βασική τεχνική</li>
+                  <li>• Κλινάδες & γόνατα</li>
+                  <li>• Αγωνιστική προετοιμασία</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
+                    <Image
+                      src="/images/icons/kickboxing-icon.png"
+                      alt="Kick Boxing"
+                      width={32}
+                      height={32}
+                      className="brightness-0 invert"
+                    />
+                  </div>
+                  <h4 className="font-display font-bold text-lg">Kick Boxing</h4>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  Συνδυασμός πυγμαχίας και κλοτσιών για δύναμη και αντοχή.
+                </p>
+                <ul className="text-sm text-gray-400 space-y-1">
+                  <li>• Combo τεχνικές</li>
+                  <li>• Φυσική κατάσταση</li>
+                  <li>• Αγωνιστικό sparring</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
+                    <Image
+                      src="/images/icons/boxing-icon.png"
+                      alt="Boxing"
+                      width={32}
+                      height={32}
+                      className="brightness-0 invert"
+                    />
+                  </div>
+                  <h4 className="font-display font-bold text-lg">Πυγμαχία</h4>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  Κλασική πυγμαχία με έμφαση στην τεχνική και στρατηγική.
+                </p>
+                <ul className="text-sm text-gray-400 space-y-1">
+                  <li>• Βασικές στάσεις</li>
+                  <li>• Αμυντική τεχνική</li>
+                  <li>• Τακτική αγώνα</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
+                    <Image
+                      src="/images/icons/fitness-icon.png"
+                      alt="Fitness"
+                      width={32}
+                      height={32}
+                      className="brightness-0 invert"
+                    />
+                  </div>
+                  <h4 className="font-display font-bold text-lg">Φυσική Κατάσταση</h4>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  Ειδικά προγράμματα ενδυνάμωσης για μαχητές.
+                </p>
+                <ul className="text-sm text-gray-400 space-y-1">
+                  <li>• Functional training</li>
+                  <li>• Καρδιαγγειακή αντοχή</li>
+                  <li>• Δύναμη & ταχύτητα</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
+                    <Image
+                      src="/images/icons/personal-training-icon.png"
+                      alt="Personal Training"
+                      width={32}
+                      height={32}
+                      className="brightness-0 invert"
+                    />
+                  </div>
+                  <h4 className="font-display font-bold text-lg">Προσωπική Προπόνηση</h4>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  Εξατομικευμένα προγράμματα με τον προπονητή.
+                </p>
+                <ul className="text-sm text-gray-400 space-y-1">
+                  <li>• 1-on-1 προπόνηση</li>
+                  <li>• Εξατομικευμένο πλάνο</li>
+                  <li>• Ταχύτερη εξέλιξη</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
+                    <Image
+                      src="/images/icons/group-class-icon.png"
+                      alt="Group Classes"
+                      width={32}
+                      height={32}
+                      className="brightness-0 invert"
+                    />
+                  </div>
+                  <h4 className="font-display font-bold text-lg">Ομαδικά Μαθήματα</h4>
+                </div>
+                <p className="text-gray-300 mb-4">
+                  Δυναμικά group classes για όλα τα επίπεδα.
+                </p>
+                <ul className="text-sm text-gray-400 space-y-1">
+                  <li>• Beginners classes</li>
+                  <li>• Advanced training</li>
+                  <li>• Competition prep</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          {/* Equipment Details */}
+          <div className="bg-gradient-to-r from-gray-800 to-gray-700 p-8 rounded-2xl">
+            <h3 className="font-display font-bold text-2xl text-white text-center mb-8">
+              Εξοπλισμός Γυμναστηρίου
+            </h3>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
+                  <Image
+                    src="/images/icons/professional-ring-icon.png"
+                    alt="Professional Ring"
+                    width={40}
+                    height={40}
+                    className="brightness-0 invert"
+                  />
+                </div>
+                <h4 className="font-semibold text-white mb-2">Professional Ring</h4>
+                <p className="text-gray-300 text-sm">Αγωνιστικό ring διαστάσεων</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
+                  <Image
+                    src="/images/icons/heavy-bags-icon.png"
+                    alt="Heavy Bags"
+                    width={40}
+                    height={40}
+                    className="brightness-0 invert"
+                  />
+                </div>
+                <h4 className="font-semibold text-white mb-2">Heavy Bags</h4>
+                <p className="text-gray-300 text-sm">Βαριοί σάκοι επαγγελματικών προδιαγραφών</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
+                  <Image
+                    src="/images/icons/speed-bags-icon.png"
+                    alt="Speed Bags"
+                    width={40}
+                    height={40}
+                    className="brightness-0 invert"
+                  />
+                </div>
+                <h4 className="font-semibold text-white mb-2">Speed Bags</h4>
+                <p className="text-gray-300 text-sm">Για ταχύτητα και συντονισμό</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
+                  <Image
+                    src="/images/icons/protective-gear-icon.png"
+                    alt="Protective Gear"
+                    width={40}
+                    height={40}
+                    className="brightness-0 invert"
+                  />
+                </div>
+                <h4 className="font-semibold text-white mb-2">Protective Gear</h4>
+                <p className="text-gray-300 text-sm">Πλήρης προστατευτικός εξοπλισμός</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 {/* Trainer Section */}
       <section id="trainer" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
