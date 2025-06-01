@@ -1,4 +1,5 @@
 import Navigation from '../components/Navigation'
+import Image from 'next/image'  // ← ADD THIS LINE
 
 export default function Home() {
   return (
@@ -66,6 +67,125 @@ export default function Home() {
                 <p className="text-primary-600 text-xl font-semibold">
                   [Training Photo Placeholder]
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+{/* Trainer Section */}
+      <section id="trainer" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-4">
+              Ο Προπονητής μας
+            </h2>
+            <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
+          </div>
+          
+          <div className="grid lg:grid-cols-5 gap-12 items-start">
+            {/* Photo Section - Left Side */}
+            <div className="lg:col-span-2">
+              <div className="sticky top-24">
+                <div className="relative">
+                  {/* Replace this div with Image component when you have the photo */}
+                 {/* NEW - Image component */}
+                  <div className="aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl shadow-xl overflow-hidden">
+                    <Image
+                      src="/images/profile_photo.jpg" 
+                      alt="Κοντός Δημήτρης - Προπονητής Nemesis Athletic Club"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                  
+          
+                </div>
+              </div>
+            </div>
+            
+            {/* Content Section - Right Side */}
+            <div className="lg:col-span-3 space-y-8">
+              <div>
+                <h3 className="font-display font-bold text-3xl md:text-4xl text-gray-900 mb-3">
+                  Κοντός Δημήτρης
+                </h3>
+                <p className="text-primary-600 font-semibold text-xl mb-6">
+                  Προπονητής Nemesis Athletic Club
+                </p>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-primary-600">
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Ονομάζομαι Κοντός Δημήτρης και είμαι προπονητής του συλλόγου Nemesis Athletic Club. 
+                    Ασχολούμαι ενεργά με τα μαχητικά αθλήματα από το 2000, με πολυετή εμπειρία τόσο ως 
+                    αθλητής όσο και ως προπονητής.
+                  </p>
+                </div>
+                
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Υπήρξα αθλητής στα αθλήματα του Muay Thai και του Kick Boxing, αγωνιζόμενος σε 
+                  ερασιτεχνικό και επαγγελματικό επίπεδο. Μέσα από την πορεία μου στους αγωνιστικούς 
+                  χώρους, έχω ζήσει από κοντά τις απαιτήσεις, τις προκλήσεις αλλά και τις μοναδικές 
+                  στιγμές που προσφέρει ο χώρος των μαχητικών αθλημάτων.
+                </p>
+                
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Ως προπονητής, στόχος μου είναι να μεταδώσω τη γνώση και την εμπειρία μου στους 
+                  αθλητές του συλλόγου, δίνοντας έμφαση στην τεχνική κατάρτιση, την ενδυνάμωση του 
+                  σώματος και του πνεύματος, αλλά και στις αξίες του σεβασμού, της πειθαρχίας και 
+                  της αυτοβελτίωσης.
+                </p>
+                
+                <div className="bg-primary-50 p-6 rounded-xl">
+                  <p className="text-lg text-primary-800 leading-relaxed font-semibold">
+                    Στο Nemesis Athletic Club, υποστηρίζουμε κάθε αθλητή – είτε ξεκινάει τώρα είτε 
+                    στοχεύει στον αγωνιστικό στίβο – και χτίζουμε μαζί του τα θεμέλια για μια πορεία 
+                    με υγεία, εξέλιξη και επιτυχίες.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Experience Highlights */}
+              <div className="mt-8">
+                <h4 className="font-display font-semibold text-2xl text-gray-900 mb-6">
+                  Εμπειρία & Εξειδίκευση
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="bg-white border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex items-center mb-3">
+                      <div className="w-4 h-4 bg-primary-600 rounded-full mr-3"></div>
+                      <span className="font-display font-semibold text-gray-900 text-lg">Muay Thai</span>
+                    </div>
+                    <p className="text-gray-600">Ερασιτεχνικό & Επαγγελματικό επίπεδο</p>
+                  </div>
+                  
+                  <div className="bg-white border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex items-center mb-3">
+                      <div className="w-4 h-4 bg-primary-600 rounded-full mr-3"></div>
+                      <span className="font-display font-semibold text-gray-900 text-lg">Kick Boxing</span>
+                    </div>
+                    <p className="text-gray-600">Αγωνιστική εμπειρία από το 2000</p>
+                  </div>
+                  
+                  <div className="bg-white border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex items-center mb-3">
+                      <div className="w-4 h-4 bg-primary-600 rounded-full mr-3"></div>
+                      <span className="font-display font-semibold text-gray-900 text-lg">Προπονητική</span>
+                    </div>
+                    <p className="text-gray-600">Εξειδίκευση σε τεχνική & φυσική κατάρτιση</p>
+                  </div>
+                  
+                  <div className="bg-white border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex items-center mb-3">
+                      <div className="w-4 h-4 bg-primary-600 rounded-full mr-3"></div>
+                      <span className="font-display font-semibold text-gray-900 text-lg">Αξίες</span>
+                    </div>
+                    <p className="text-gray-600">Σεβασμός, πειθαρχία, αυτοβελτίωση</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
