@@ -8,29 +8,29 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      {/* Hero Section */}
+{/* Hero Section */}
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-primary-600">
-          {/* Placeholder for background image */}
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div className="absolute inset-0 z-0 bg-black">
+          {/* Background image overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black via-secondary-900 to-primary-900 opacity-90"></div>
         </div>
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="font-display font-bold text-4xl md:text-6xl lg:text-7xl mb-6 text-shadow animate-fade-in">
-            FIGHTINGROOSTER
+          <h1 className="font-display font-bold text-4xl md:text-6xl lg:text-7xl mb-6 text-glow animate-fade-in">
+            FIGHTING ROOSTER
             <br />
-            <span className="text-white">ATHENS</span>
+            <span className="text-primary-300">ATHENS</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-shadow animate-slide-up">
+          <p className="text-xl md:text-2xl mb-8 text-primary-100 animate-slide-up">
             Η έδρα του Nemesis Athletic Club
           </p>
           <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center animate-slide-up">
             <a href="#about" 
-               className="inline-block bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300 border-2 border-white">
+               className="inline-block bg-primary-300 hover:bg-primary-400 text-black font-semibold py-3 px-8 rounded-lg transition-all duration-300 border-2 border-primary-300 hover:shadow-lg">
               Μάθε Περισσότερα
             </a>
             <a href="#contact" 
-               className="inline-block border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300">
+               className="inline-block border-2 border-primary-300 hover:bg-primary-300 hover:text-black text-primary-300 font-semibold py-3 px-8 rounded-lg transition-all duration-300">
               Επικοινωνία
             </a>
           </div>
@@ -88,33 +88,22 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-gray-800">
-              {/* Video placeholder - replace with real video */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Προπονητικό Video</h3>
-                  <p className="text-primary-100">(Θα προστεθεί βίντεο από τις προπονήσεις)</p>
-                </div>
-              </div>
-              
-              {/* Uncomment when you have a video
-              <video 
-                controls 
-                poster="/images/video-thumbnail.jpg"
-                className="w-full h-full object-cover"
-              >
-                <source src="/videos/gym-promo.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              */}
-            </div>
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="rounded-2xl overflow-hidden shadow-2xl bg-gray-800">
+            <video 
+              controls 
+              poster="/images/icons/icon_main.png"
+              className="w-full h-auto max-h-[60vh] object-contain"
+              style={{ 
+                maxWidth: '100%',
+                height: 'auto'
+              }}
+            >
+              <source src="/videos/0-02-05-c009ea59b887b0b56fd941eddf95947d7762af1da1e7c1f4c66986dfe99eec4f_1c1d105029d99a.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
+        </div>
         </div>
       </section>
 
@@ -136,7 +125,7 @@ export default function Home() {
             <div className="text-center p-8 bg-gray-800 rounded-2xl hover:bg-gray-750 transition-colors">
               <div className="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 p-4">
                 <Image
-                  src="/images/icons/equipment-icon.png"
+                  src="/images/icons/ring-icon.png"
                   alt="Professional Equipment"
                   width={40}
                   height={40}
@@ -154,7 +143,7 @@ export default function Home() {
             <div className="text-center p-8 bg-gray-800 rounded-2xl hover:bg-gray-750 transition-colors">
               <div className="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 p-4">
                 <Image
-                  src="/images/icons/program-icon.png"
+                  src="/images/icons/fitness-program-icon.png"
                   alt="Complete Program"
                   width={40}
                   height={40}
@@ -222,7 +211,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
-                      src="/images/icons/kickboxing-icon.png"
+                      src="/images/icons/kick-boxing-icon.svg"
                       alt="Kick Boxing"
                       width={32}
                       height={32}
@@ -272,7 +261,6 @@ export default function Home() {
                       alt="Fitness"
                       width={32}
                       height={32}
-                      className="brightness-0 invert"
                     />
                   </div>
                   <h4 className="font-display font-bold text-lg">Φυσική Κατάσταση</h4>
@@ -345,7 +333,7 @@ export default function Home() {
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
                   <Image
-                    src="/images/icons/professional-ring-icon.png"
+                    src="/images/icons/ring-icon.png"
                     alt="Professional Ring"
                     width={40}
                     height={40}
@@ -373,7 +361,7 @@ export default function Home() {
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
                   <Image
-                    src="/images/icons/speed-bags-icon.png"
+                    src="/images/icons/speed-pag-icon.png"
                     alt="Speed Bags"
                     width={40}
                     height={40}
@@ -387,7 +375,7 @@ export default function Home() {
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
                   <Image
-                    src="/images/icons/protective-gear-icon.png"
+                    src="/images/icons/gear-icon.png"
                     alt="Protective Gear"
                     width={40}
                     height={40}
@@ -417,8 +405,6 @@ export default function Home() {
             <div className="lg:col-span-2">
               <div className="sticky top-24">
                 <div className="relative">
-                  {/* Replace this div with Image component when you have the photo */}
-                 {/* NEW - Image component */}
                   <div className="aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl shadow-xl overflow-hidden">
                     <Image
                       src="/images/profile_photo.jpg" 

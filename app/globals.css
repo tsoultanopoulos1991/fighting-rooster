@@ -90,3 +90,21 @@ html {
     background-position: -200% 0;
   }
 }
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px #64ffff40;
+  }
+  to {
+    box-shadow: 0 0 30px #64ffff80;
+  }
+}
+
+.text-glow {
+  text-shadow: 0 0 10px #64ffff, 0 0 20px #64ffff, 0 0 30px #64ffff;
+}
+
+.border-glow {
+  border: 2px solid #64ffff;
+  box-shadow: 0 0 15px #64ffff40;
+}
