@@ -15,10 +15,10 @@ interface PhotoGalleryProps {
   subtitle?: string
 }
 
-export default function PhotoGallery({ 
-  images = defaultImages, 
-  title = "Φωτογραφίες από το Γυμναστήριο",
-  subtitle = "Ρίξε μια ματιά στον χώρο μας, τον εξοπλισμό και την ατμόσφαιρα προπόνησης"
+export default function PhotoGallery({
+  images = defaultImages,
+  title = 'Φωτογραφίες από το Γυμναστήριο',
+  subtitle = 'Ρίξε μια ματιά στον χώρο μας, τον εξοπλισμό και την ατμόσφαιρα προπόνησης',
 }: PhotoGalleryProps) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isChanging, setIsChanging] = useState(false)
@@ -33,10 +33,10 @@ export default function PhotoGallery({
 
   const changeSlide = (newIndex: number) => {
     if (newIndex === currentSlide || isChanging) return
-    
+
     setIsChanging(true)
     setCurrentSlide(newIndex)
-    
+
     // Reset changing state quickly
     setTimeout(() => setIsChanging(false), 150)
   }
@@ -64,9 +64,7 @@ export default function PhotoGallery({
             {title}
           </h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {subtitle}
-          </p>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">{subtitle}</p>
         </div>
 
         {/* Main Slider */}
@@ -83,7 +81,7 @@ export default function PhotoGallery({
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
               />
-              
+
               {/* Overlay with title - faster transition */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
                 <div className="absolute bottom-6 left-6 right-6 transition-all duration-150 ease-out">
@@ -105,7 +103,12 @@ export default function PhotoGallery({
               aria-label="Previous image"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
             </button>
 
@@ -116,7 +119,12 @@ export default function PhotoGallery({
               aria-label="Next image"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </button>
           </div>
@@ -129,8 +137,8 @@ export default function PhotoGallery({
                 onClick={() => goToSlide(index)}
                 disabled={isChanging}
                 className={`w-3 h-3 rounded-full transition-all duration-150 ${
-                  index === currentSlide 
-                    ? 'bg-primary-600 scale-125' 
+                  index === currentSlide
+                    ? 'bg-primary-600 scale-125'
                     : 'bg-gray-300 hover:bg-gray-400'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
@@ -148,8 +156,8 @@ export default function PhotoGallery({
                 onClick={() => goToSlide(index)}
                 disabled={isChanging}
                 className={`relative aspect-square rounded-lg overflow-hidden transition-all duration-100 ${
-                  index === currentSlide 
-                    ? 'ring-4 ring-primary-600 scale-105' 
+                  index === currentSlide
+                    ? 'ring-4 ring-primary-600 scale-105'
                     : 'hover:scale-105 hover:shadow-lg'
                 }`}
               >
@@ -175,7 +183,7 @@ export default function PhotoGallery({
               <span className="font-semibold">{images.length}</span> φωτογραφίες
             </p>
           </div>
-          
+
           <button
             onClick={nextSlide}
             disabled={isChanging}
@@ -192,33 +200,33 @@ export default function PhotoGallery({
 // Default images (you can customize these)
 const defaultImages: GalleryImage[] = [
   {
-    src: "/images/gallery/gym-interior-1.jpg",
-    alt: "Gym Interior - Ring and Equipment",
-    title: "Εξωτερικός Χώρος Γυμναστηρίου"
+    src: '/images/gallery/gym-interior-1.jpg',
+    alt: 'Gym Interior - Ring and Equipment',
+    title: 'Εξωτερικός Χώρος Γυμναστηρίου',
   },
   {
-    src: "/images/gallery/gym-interior-2.jpg", 
-    alt: "Muay Thai Training Session",
-    title: "Εσωτερικός Χώρος Γυμναστηρίου"
+    src: '/images/gallery/gym-interior-2.jpg',
+    alt: 'Muay Thai Training Session',
+    title: 'Εσωτερικός Χώρος Γυμναστηρίου',
   },
   {
-    src: "/images/gallery/gym-interior-3.jpg",
-    alt: "Heavy Bags Area",
-    title: "Εσωτερικός Χώρος Γυμναστηρίου"
-  },
-    {
-    src: "/images/gallery/gym-interior-4.jpg",
-    alt: "Heavy Bags Area",
-    title: "Εσωτερικός Χώρος Γυμναστηρίου"
+    src: '/images/gallery/gym-interior-3.jpg',
+    alt: 'Heavy Bags Area',
+    title: 'Εσωτερικός Χώρος Γυμναστηρίου',
   },
   {
-    src: "/images/gallery/team-1.jpg",
-    alt: "Muay Thai Training Session",
-    title: "Η Ομάδα μας"
+    src: '/images/gallery/gym-interior-4.jpg',
+    alt: 'Heavy Bags Area',
+    title: 'Εσωτερικός Χώρος Γυμναστηρίου',
   },
   {
-    src: "/images/gallery/team-2.jpg",
-    alt: "Muay Thai Training Session",
-    title: "Η Ομάδα μας"
-  }
+    src: '/images/gallery/team-1.jpg',
+    alt: 'Muay Thai Training Session',
+    title: 'Η Ομάδα μας',
+  },
+  {
+    src: '/images/gallery/team-2.jpg',
+    alt: 'Muay Thai Training Session',
+    title: 'Η Ομάδα μας',
+  },
 ]
