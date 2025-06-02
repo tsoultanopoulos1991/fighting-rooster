@@ -16,6 +16,10 @@ const nextConfig = {
   compress: true,
   // Optimize bundle
   poweredByHeader: false,
+  // Default port configuration
+  async rewrites() {
+    return []
+  },
 }
 
 module.exports = nextConfig
