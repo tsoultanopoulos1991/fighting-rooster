@@ -261,6 +261,8 @@ export default function Home() {
                       alt="Fitness"
                       width={32}
                       height={32}
+                      className="brightness-0 invert"
+
                     />
                   </div>
                   <h4 className="font-display font-bold text-lg">Φυσική Κατάσταση</h4>
