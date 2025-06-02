@@ -76,14 +76,14 @@ export default function Home() {
             <div className="relative">
               <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/gallery/training-photo.jpg"  
+                  src="/images/gallery/training-photo.jpg"
                   alt="Fighting Rooster Training Session"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  priority={true} 
+                  priority={true}
                 />
-                
+
                 {/* Optional: Overlay with text */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent">
                   <div className="absolute bottom-4 left-4 text-white">
@@ -580,7 +580,7 @@ export default function Home() {
                       />
                     </svg>
                   </div>
-<div>
+                  <div>
                     <h4 className="font-semibold text-white text-lg mb-4">Επισκεφθείτε μας</h4>
                     <p className="text-gray-300 leading-relaxed mb-4">
                       <span className="font-medium text-white">Fighting Rooster</span>
@@ -589,49 +589,47 @@ export default function Home() {
                       <br />
                       <span className="text-sm">Κέντρο Αθήνας - Εύκολη πρόσβαση με ΜΜΜ</span>
                     </p>
-                    
+
                     {/* Google Maps Embed - Specific Business */}
                     <div className="rounded-lg overflow-hidden shadow-lg">
-                      <iframe 
+                      <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.6!2d23.7341!3d37.9755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sFighting%20Rooster%2C%20Καρτερίας%2018%2C%20Αθήνα!5e0!3m2!1sel!2sgr!4v1234567890"
-                        width="100%" 
-                        height="250" 
+                        width="100%"
+                        height="250"
                         style={{ border: 0 }}
                         allowFullScreen
-                        loading="lazy" 
+                        loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Fighting Rooster - Καρτερίας 18, Αθήνα"
                       ></iframe>
                     </div>
-                    
+
                     {/* Quick Actions */}
                     <div className="mt-4 flex flex-wrap gap-2">
-                      <a 
+                      <a
                         href="https://maps.google.com/maps?q=Fighting+Rooster,+Καρτερίας+18,+Αθήνα"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center px-3 py-2 bg-primary-600 hover:bg-primary-700 text-white text-sm rounded-lg transition-colors"
                       >
                         <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                         </svg>
                         Δες μας στο Maps
                       </a>
-                      
-                      <a 
+
+                      <a
                         href="https://www.google.com/maps/dir//Fighting+Rooster,+Καρτερίας+18,+Αθήνα"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center px-3 py-2 bg-gray-600 hover:bg-gray-700 text-white text-sm rounded-lg transition-colors"
                       >
                         <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7h-4c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+                          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7h-4c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z" />
                         </svg>
                         Οδηγίες
                       </a>
                     </div>
-                    
-                  
                   </div>
                 </div>
 
