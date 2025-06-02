@@ -1,6 +1,7 @@
 import Navigation from '../components/Navigation'
 import Image from 'next/image' 
-import ContactForm from '../components/ContactForm'  
+import ContactForm from '../components/ContactForm' 
+import PhotoGallery from '../components/PhotoGallery'
 import BackToTop from '../components/BackToTop'
 
 export default function Home() {
@@ -509,6 +510,7 @@ export default function Home() {
         </div>
       </section>
 
+      <PhotoGallery />
           {/* Contact Section */}
       <section id="contact" className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
