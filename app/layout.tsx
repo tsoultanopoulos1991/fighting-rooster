@@ -2,21 +2,22 @@ import type { Metadata } from 'next'
 import { Inter, Oswald } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin', 'greek'],
   display: 'swap',
-  variable: '--font-inter'
+  variable: '--font-inter',
 })
 
-const oswald = Oswald({ 
+const oswald = Oswald({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-oswald'
+  variable: '--font-oswald',
 })
 
 export const metadata: Metadata = {
   title: 'Fightingrooster Athens - Nemesis Athletic Club',
-  description: 'Το προπονητήριο των μαχητικών αθλημάτων στην Αθήνα. Muay Thai, Kick Boxing, Πυγμαχία.',
+  description:
+    'Το προπονητήριο των μαχητικών αθλημάτων στην Αθήνα. Muay Thai, Kick Boxing, Πυγμαχία.',
   keywords: 'Muay Thai Αθήνα, Kick Boxing, Πυγμαχία, Μαχητικά Αθλήματα',
 }
 
