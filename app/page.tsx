@@ -40,7 +40,9 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-8 text-primary-100 animate-slide-up">
             Η έδρα του Nemesis Athletic Club
           </p>
-          <p>Το προπονητήριο μαχητικών αθλημάτων στην καρδιά της Κυψέλης</p>
+          <p className="text-xl md:text-2xl mb-8 text-primary-100 animate-slide-up">
+            Το προπονητήριο μαχητικών αθλημάτων στην καρδιά της Κυψέλης
+          </p>
           <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center animate-slide-up">
             <a
               href="#about"
@@ -611,7 +613,7 @@ export default function Home() {
                     {/* Google Maps Embed - Specific Business */}
                     <div className="rounded-lg overflow-hidden shadow-lg">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.6!2d23.7341!3d37.9755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sFighting%20Rooster%2C%20Καρτερίας%2018%2C%20Αθήνα!5e0!3m2!1sel!2sgr!4v1234567890"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.7045172348553!2d23.744238176463295!3d38.007352098727665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a36c1261ffdf%3A0x27e13d12d73c5f64!2sFighting%20rooster!5e0!3m2!1sen!2sgr!4v1748954570977!5m2!1sen!2sgr"
                         width="100%"
                         height="250"
                         style={{ border: 0 }}
