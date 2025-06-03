@@ -29,11 +29,11 @@ export default function PhotoGallery({
       const img = new window.Image()
       img.src = src
     }
-    
+
     // Preload current and adjacent images only
     const prevIndex = (currentSlide - 1 + images.length) % images.length
     const nextIndex = (currentSlide + 1) % images.length
-    
+
     preloadImage(images[currentSlide].src)
     preloadImage(images[prevIndex].src)
     preloadImage(images[nextIndex].src)

@@ -4,16 +4,16 @@ import dynamic from 'next/dynamic'
 
 const ContactForm = dynamic(() => import('../components/ContactForm'), {
   ssr: false,
-  loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded-2xl"></div>
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded-2xl"></div>,
 })
 
 const PhotoGallery = dynamic(() => import('../components/PhotoGallery'), {
   ssr: false,
-  loading: () => <div className="h-96 bg-gray-50 animate-pulse"></div>
+  loading: () => <div className="h-96 bg-gray-50 animate-pulse"></div>,
 })
 
 const BackToTop = dynamic(() => import('../components/BackToTop'), {
-  ssr: false
+  ssr: false,
 })
 
 export default function Home() {
@@ -135,7 +135,6 @@ export default function Home() {
                   maxWidth: '100%',
                   height: 'auto',
                 }}
-                loading="lazy"
               >
                 <source
                   src="/videos/0-02-05-c009ea59b887b0b56fd941eddf95947d7762af1da1e7c1f4c66986dfe99eec4f_1c1d105029d99a.mp4"
