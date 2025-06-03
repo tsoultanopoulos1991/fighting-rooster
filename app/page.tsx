@@ -247,7 +247,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+              <div className="bg-primary-600 border border-gray-700 p-6 rounded-xl text-white">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
@@ -260,17 +260,17 @@ export default function Home() {
                   </div>
                   <h4 className="font-display font-bold text-lg">Kick Boxing</h4>
                 </div>
-                <p className="text-gray-300 mb-4">
+                <p className="text-primary-100 mb-4">
                   Συνδυασμός πυγμαχίας και κλοτσιών για δύναμη και αντοχή.
                 </p>
-                <ul className="text-sm text-gray-400 space-y-1">
+                <ul className="text-sm text-primary-100 space-y-1">
                   <li>• Combo τεχνικές</li>
                   <li>• Φυσική κατάσταση</li>
                   <li>• Αγωνιστικό sparring</li>
                 </ul>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+              <div className="bg-primary-600 border border-gray-700 p-6 rounded-xl text-white">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
@@ -283,17 +283,17 @@ export default function Home() {
                   </div>
                   <h4 className="font-display font-bold text-lg">Πυγμαχία</h4>
                 </div>
-                <p className="text-gray-300 mb-4">
+                <p className="text-primary-100 mb-4">
                   Κλασική πυγμαχία με έμφαση στην τεχνική και στρατηγική.
                 </p>
-                <ul className="text-sm text-gray-400 space-y-1">
+                <ul className="text-sm text-primary-100 space-y-1">
                   <li>• Βασικές στάσεις</li>
                   <li>• Αμυντική τεχνική</li>
                   <li>• Τακτική αγώνα</li>
                 </ul>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+              <div className="bg-primary-600 border border-gray-700 p-6 rounded-xl text-white">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
@@ -306,15 +306,15 @@ export default function Home() {
                   </div>
                   <h4 className="font-display font-bold text-lg">Φυσική Κατάσταση</h4>
                 </div>
-                <p className="text-gray-300 mb-4">Ειδικά προγράμματα ενδυνάμωσης για μαχητές.</p>
-                <ul className="text-sm text-gray-400 space-y-1">
+                <p className="text-primary-100 mb-4">Ειδικά προγράμματα ενδυνάμωσης για μαχητές.</p>
+                <ul className="text-sm text-primary-100 space-y-1">
                   <li>• Functional training</li>
                   <li>• Καρδιαγγειακή αντοχή</li>
                   <li>• Δύναμη & ταχύτητα</li>
                 </ul>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+              <div className="bg-primary-600 border border-gray-700 p-6 rounded-xl text-white">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
@@ -327,15 +327,15 @@ export default function Home() {
                   </div>
                   <h4 className="font-display font-bold text-lg">Προσωπική Προπόνηση</h4>
                 </div>
-                <p className="text-gray-300 mb-4">Εξατομικευμένα προγράμματα με τον προπονητή.</p>
-                <ul className="text-sm text-gray-400 space-y-1">
+                <p className="text-primary-100 mb-4">Εξατομικευμένα προγράμματα με τον προπονητή.</p>
+                <ul className="text-sm text-primary-100 space-y-1">
                   <li>• 1-on-1 προπόνηση</li>
                   <li>• Εξατομικευμένο πλάνο</li>
                   <li>• Ταχύτερη εξέλιξη</li>
                 </ul>
               </div>
 
-              <div className="bg-gray-800 border border-gray-700 p-6 rounded-xl text-white">
+              <div className="bg-primary-600 border border-gray-700 p-6 rounded-xl text-white">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
@@ -348,8 +348,8 @@ export default function Home() {
                   </div>
                   <h4 className="font-display font-bold text-lg">Ομαδικά Μαθήματα</h4>
                 </div>
-                <p className="text-gray-300 mb-4">Δυναμικά group classes για όλα τα επίπεδα.</p>
-                <ul className="text-sm text-gray-400 space-y-1">
+                <p className="text-primary-100 mb-4">Δυναμικά group classes για όλα τα επίπεδα.</p>
+                <ul className="text-sm text-primary-100 space-y-1">
                   <li>• Beginners classes</li>
                   <li>• Advanced training</li>
                   <li>• Competition prep</li>
