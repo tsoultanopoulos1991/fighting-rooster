@@ -6,12 +6,14 @@ const inter = Inter({
   subsets: ['latin', 'greek'],
   display: 'swap',
   variable: '--font-inter',
+  preload: true,
 })
 
 const oswald = Oswald({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-oswald',
+  preload: true,
 })
 
 export const metadata: Metadata = {

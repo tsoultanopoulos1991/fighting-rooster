@@ -1,8 +1,20 @@
 import Navigation from '../components/Navigation'
 import Image from 'next/image'
-import ContactForm from '../components/ContactForm'
-import PhotoGallery from '../components/PhotoGallery'
-import BackToTop from '../components/BackToTop'
+import dynamic from 'next/dynamic'
+
+const ContactForm = dynamic(() => import('../components/ContactForm'), {
+  ssr: false,
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded-2xl"></div>
+})
+
+const PhotoGallery = dynamic(() => import('../components/PhotoGallery'), {
+  ssr: false,
+  loading: () => <div className="h-96 bg-gray-50 animate-pulse"></div>
+})
+
+const BackToTop = dynamic(() => import('../components/BackToTop'), {
+  ssr: false
+})
 
 export default function Home() {
   return (
@@ -82,6 +94,7 @@ export default function Home() {
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   priority={true}
+                  loading="eager"
                 />
 
                 {/* Optional: Overlay with text */}
@@ -115,12 +128,14 @@ export default function Home() {
             <div className="rounded-2xl overflow-hidden shadow-2xl bg-gray-800">
               <video
                 controls
+                preload="none"
                 poster="/images/icons/icon_main.png"
                 className="w-full h-auto max-h-[60vh] object-contain"
                 style={{
                   maxWidth: '100%',
                   height: 'auto',
                 }}
+                loading="lazy"
               >
                 <source
                   src="/videos/0-02-05-c009ea59b887b0b56fd941eddf95947d7762af1da1e7c1f4c66986dfe99eec4f_1c1d105029d99a.mp4"

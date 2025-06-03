@@ -23,13 +23,21 @@ export default function PhotoGallery({
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isChanging, setIsChanging] = useState(false)
 
-  // Preload all images for faster transitions
+  // Preload only next/prev images for faster transitions
   useEffect(() => {
-    images.forEach((image) => {
+    const preloadImage = (src: string) => {
       const img = new window.Image()
-      img.src = image.src
-    })
-  }, [images])
+      img.src = src
+    }
+    
+    // Preload current and adjacent images only
+    const prevIndex = (currentSlide - 1 + images.length) % images.length
+    const nextIndex = (currentSlide + 1) % images.length
+    
+    preloadImage(images[currentSlide].src)
+    preloadImage(images[prevIndex].src)
+    preloadImage(images[nextIndex].src)
+  }, [images, currentSlide])
 
   const changeSlide = (newIndex: number) => {
     if (newIndex === currentSlide || isChanging) return
@@ -78,7 +86,7 @@ export default function PhotoGallery({
                 alt={images[currentSlide].alt}
                 fill
                 className="object-cover transition-opacity duration-200 ease-out" // ← Faster transition
-                priority
+                loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
               />
 
