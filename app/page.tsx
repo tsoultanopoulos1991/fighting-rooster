@@ -152,7 +152,7 @@ export default function Home() {
       </section>
 
       {/* Features & Services Section */}
-      <section id="feutures" className="py-20 bg-gray-900">
+      <section className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-4">
@@ -222,7 +222,7 @@ export default function Home() {
           </div>
 
           {/* Sports Programs */}
-          <div className="mb-16">
+          <div id="sports-program" className="mb-16">
             <h3 className="font-display font-bold text-2xl text-white text-center mb-12">
               Αθλήματα & Προγράμματα
             </h3>
@@ -848,27 +848,27 @@ export default function Home() {
               <h4 className="font-display font-semibold text-lg mb-4 text-white">Αθλήματα</h4>
               <ul className="space-y-2 text-gray-300">
                 <li>
-                  <a href="#feutures" className="hover:text-primary-500 transition-colors">
+                  <a href="#sports-program" className="hover:text-primary-500 transition-colors">
                     Muay Thai
                   </a>
                 </li>
                 <li>
-                  <a href="#feutures" className="hover:text-primary-500 transition-colors">
+                  <a href="#sports-program" className="hover:text-primary-500 transition-colors">
                     Kick Boxing
                   </a>
                 </li>
                 <li>
-                  <a href="#feutures" className="hover:text-primary-500 transition-colors">
+                  <a href="#sports-program" className="hover:text-primary-500 transition-colors">
                     Πυγμαχία
                   </a>
                 </li>
                 <li>
-                  <a href="#feutures" className="hover:text-primary-500 transition-colors">
+                  <a href="#sports-program" className="hover:text-primary-500 transition-colors">
                     Φυσική Κατάσταση
                   </a>
                 </li>
                 <li>
-                  <a href="#feutures" className="hover:text-primary-500 transition-colors">
+                  <a href="#sports-program" className="hover:text-primary-500 transition-colors">
                     Προσωπική Προπόνηση
                   </a>
                 </li>
