@@ -31,7 +31,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="el" className={`${inter.variable} ${oswald.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
