@@ -40,6 +40,7 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-8 text-primary-100 animate-slide-up">
             Η έδρα του Nemesis Athletic Club
           </p>
+          <p>Το προπονητήριο μαχητικών αθλημάτων στην καρδιά της Κυψέλης</p>
           <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center animate-slide-up">
             <a
               href="#about"
@@ -76,8 +77,9 @@ export default function Home() {
               <p className="text-lg text-gray-700 leading-relaxed">
                 Με έμπνευση από το πνεύμα του μαχητή κόκορα, το Fightingrooster Athens δημιουργήθηκε
                 για να φιλοξενεί αθλητές κάθε επιπέδου – από αρχάριους που θέλουν να γνωρίσουν τον
-                κόσμο του Muay Thai, του Kick Boxing και της πυγμαχίας, μέχρι προχωρημένους και
-                αγωνιστικούς αθλητές που επιδιώκουν υψηλές επιδόσεις.
+                κόσμο του <strong>Muay Thai</strong>, του <strong>Kick Boxing</strong> και της{' '}
+                <strong>πυγμαχίας</strong>, μέχρι προχωρημένους και αγωνιστικούς αθλητές που
+                επιδιώκουν υψηλές επιδόσεις.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed font-semibold text-primary-700">
                 Δεν χτίζουμε απλά αθλητές – χτίζουμε χαρακτήρες, πειθαρχία, αυτοπεποίθηση και
@@ -89,7 +91,7 @@ export default function Home() {
               <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src="/images/gallery/training-photo.jpg"
-                  alt="Fighting Rooster Training Session"
+                  alt="Η Ομάδαμας στο Fighting Rooster Κυψέλη"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -166,7 +168,7 @@ export default function Home() {
               <div className="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 p-4">
                 <Image
                   src="/images/icons/ring-icon.png"
-                  alt="Professional Equipment"
+                  alt="Επαγγελματικος εξοπλισμός fighting rooster κυψελη kick boxing"
                   width={40}
                   height={40}
                   className="brightness-0 invert"
@@ -185,7 +187,7 @@ export default function Home() {
               <div className="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 p-4">
                 <Image
                   src="/images/icons/fitness-program-icon.png"
-                  alt="Complete Program"
+                  alt="Προγραμμα ενδυναμωσης fighting rooster κυψελη"
                   width={40}
                   height={40}
                   className="brightness-0 invert"
@@ -202,7 +204,7 @@ export default function Home() {
               <div className="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 p-4">
                 <Image
                   src="/images/icons/guidance-icon.png"
-                  alt="Specialized Guidance"
+                  alt="Προσωπικη καθοδηγηση fighting rooster κυψελη"
                   width={40}
                   height={40}
                   className="brightness-0 invert"
@@ -229,7 +231,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
                       src="/images/icons/muay-thai-icon.png"
-                      alt="Muay Thai"
+                      alt="Muay Thai κυψελη"
                       width={32}
                       height={32}
                       className="brightness-0 invert"
@@ -252,7 +254,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
                       src="/images/icons/kick-boxing-icon.svg"
-                      alt="Kick Boxing"
+                      alt="Kick Boxing κυψέλη"
                       width={32}
                       height={32}
                       className="brightness-0 invert"
@@ -275,7 +277,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
                       src="/images/icons/boxing-icon.png"
-                      alt="Boxing"
+                      alt="Boxing κυψέλη"
                       width={32}
                       height={32}
                       className="brightness-0 invert"
@@ -298,7 +300,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
                       src="/images/icons/fitness-icon.png"
-                      alt="Fitness"
+                      alt="Fitness κυψέλη"
                       width={32}
                       height={32}
                       className="brightness-0 invert"
@@ -319,7 +321,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
                       src="/images/icons/personal-training-icon.png"
-                      alt="Personal Training"
+                      alt="Personal Training κυψέλη"
                       width={32}
                       height={32}
                       className="brightness-0 invert"
@@ -342,7 +344,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-primary-600 bg-opacity-20 rounded-lg flex items-center justify-center mr-4 p-2">
                     <Image
                       src="/images/icons/group-class-icon.png"
-                      alt="Group Classes"
+                      alt="Group Classes κυψέλη"
                       width={32}
                       height={32}
                       className="brightness-0 invert"
@@ -371,7 +373,7 @@ export default function Home() {
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
                   <Image
                     src="/images/icons/ring-icon.png"
-                    alt="Professional Ring"
+                    alt="Professional Ring fighting rooster κυψελη"
                     width={40}
                     height={40}
                     className="brightness-0 invert"
@@ -385,7 +387,7 @@ export default function Home() {
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
                   <Image
                     src="/images/icons/heavy-bags-icon.png"
-                    alt="Heavy Bags"
+                    alt="Heavy Bags fighting rooster κυψελη"
                     width={40}
                     height={40}
                     className="brightness-0 invert"
@@ -399,7 +401,7 @@ export default function Home() {
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
                   <Image
                     src="/images/icons/speed-pag-icon.png"
-                    alt="Speed Bags"
+                    alt="Speed Bags fighting rooster κυψελη"
                     width={40}
                     height={40}
                     className="brightness-0 invert"
@@ -413,7 +415,7 @@ export default function Home() {
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4 p-3">
                   <Image
                     src="/images/icons/gear-icon.png"
-                    alt="Protective Gear"
+                    alt="Protective Gear fighting rooster κυψελη"
                     width={40}
                     height={40}
                     className="brightness-0 invert"

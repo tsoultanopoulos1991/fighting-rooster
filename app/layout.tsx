@@ -17,10 +17,9 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-  title: 'Fightingrooster Athens - Nemesis Athletic Club',
+  title: 'Muay Thai & Kick Boxing στην Κυψέλη – FightingRooster Athens',
   description:
-    'Το προπονητήριο των μαχητικών αθλημάτων στην Αθήνα. Muay Thai, Kick Boxing, Πυγμαχία.',
-  keywords: 'Muay Thai Αθήνα, Kick Boxing, Πυγμαχία, Μαχητικά Αθλήματα',
+    'Μαθήματα Muay Thai, Kick Boxing και Πυγμαχίας στην Κυψέλη. Ελάτε στο προπονητήριο FightingRooster για επαγγελματική προπόνηση σε μαχητικά αθλήματα.',
 }
 
 interface RootLayoutProps {
