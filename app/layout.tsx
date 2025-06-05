@@ -30,7 +30,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="el" className={`${inter.variable} ${oswald.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.png" />
+        <title>FightingRooster Athens – Μαχητικά Αθλήματα στην Κυψέλη</title>
+        <meta
+          name="description"
+          content="Μαθήματα Muay Thai, Kick Boxing και Πυγμαχίας στην Κυψέλη. Ελάτε στο προπονητήριο FightingRooster για επαγγελματική προπόνηση."
+        />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
