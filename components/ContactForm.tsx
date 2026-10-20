@@ -1,6 +1,11 @@
 'use client'
 
 import { useState, FormEvent, useEffect } from 'react'
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser'
+
+const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
 
 interface FormData {
   name: string
@@ -83,44 +88,54 @@ export default function ContactForm() {
       return
     }
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          ...formData,
-          submissionTime: currentTime,
-          formDuration: timeDiff,
-        }),
-      })
-
-      const data = await response.json()
-
-      if (response.ok) {
-        setSubmitStatus('success')
-        // Reset form
-        setFormData((prev) => ({
-          name: '',
-          email: '',
-          phone: '',
-          message: '',
-          honeypot: '',
-          timestamp: prev.timestamp,
-          clientHash: prev.clientHash,
-        }))
-
-        // Reset success message after 5 seconds
-        setTimeout(() => setSubmitStatus('idle'), 5000)
-      } else {
-        setSubmitStatus('error')
-        setErrorMessage(data.message || 'Παρουσιάστηκε σφάλμα')
-      }
-    } catch (error) {
-      console.error('Submit error:', error)
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+      console.error('EmailJS is not configured: missing NEXT_PUBLIC_EMAILJS_* env vars')
       setSubmitStatus('error')
-      setErrorMessage('Σφάλμα δικτύου. Παρακαλώ δοκιμάστε ξανά.')
+      setErrorMessage('Η φόρμα δεν είναι διαθέσιμη αυτή τη στιγμή')
+      setIsSubmitting(false)
+      return
+    }
+
+    try {
+      // Template variables: {{name}}, {{email}}, {{phone}}, {{message}}
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          name,
+          email,
+          phone: formData.phone || 'Δεν δόθηκε',
+          message,
+        },
+        { publicKey: EMAILJS_PUBLIC_KEY },
+      )
+
+      setSubmitStatus('success')
+      // Reset form
+      setFormData((prev) => ({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+        honeypot: '',
+        timestamp: prev.timestamp,
+        clientHash: prev.clientHash,
+      }))
+
+      // Reset success message after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000)
+    } catch (error) {
+      if (error instanceof EmailJSResponseStatus) {
+        console.error(`EmailJS error ${error.status}: ${error.text}`)
+      } else {
+        console.error('Submit error:', error)
+      }
+      setSubmitStatus('error')
+      setErrorMessage(
+        error instanceof EmailJSResponseStatus && error.status === 429
+          ? 'Πολλές αποστολές. Παρακαλώ δοκιμάστε ξανά αργότερα.'
+          : 'Σφάλμα κατά την αποστολή. Παρακαλώ δοκιμάστε ξανά.',
+      )
     } finally {
       setIsSubmitting(false)
     }
